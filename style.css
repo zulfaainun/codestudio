@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#071126;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* CONTAINER */
+
+.container{
+    width:1280px;
+    max-width:92%;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+    background:#23185B;
+}
+
+.nav-wrapper{
+    height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo img{
+    width:120px;
+}
+
+nav ul{
+    display:flex;
+    gap:42px;
+    list-style:none;
+}
+
+nav ul li{
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.nav-btn{
+    background:#4C6FFF;
+    border:none;
+    color:white;
+    padding:16px 28px;
+    border-radius:6px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    padding:55px 0;
+}
+
+.hero-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.hero-left{
+    width:48%;
+}
+
+/* RIGHT SIDE */
+
+.hero-right{
+    width:52%;
+    display:flex;
+    flex-direction:column;
+}
+
+/* HERO IMAGE */
+
+.hero-image{
+    width:100%;
+    border-radius:22px;
+
+    box-shadow:
+    0 0 50px rgba(76,111,255,0.18),
+    0 20px 60px rgba(0,0,0,0.55);
+
+    transition:0.4s;
+}
+
+.hero-image:hover{
+    transform:translateY(-6px);
+}
+
+/* PARTNER */
+
+.partner{
+    margin-top:22px;
+    background:#101B35;
+    border:1px solid #2D3C5D;
+    border-radius:12px;
+    padding:22px 24px;
+}
+
+.partner p{
+    margin-top: 10x;
+    margin: bottom 5px;
+    color:#D0D7E7;
+    font-size:14px;
+}
+
+.partner-logos{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.partner-logos img{
+    height:120px;
+    opacity:0.9;
+}
+
+/* TEXT */
+
+.mini-text{
+    color:#8CA6FF;
+    font-size:18px;
+    margin-bottom:18px;
+}
+
+.hero-left h1{
+    font-size:56px;
+    line-height:1.15;
+    margin-bottom:24px;
+    font-weight:700;
+    letter-spacing:-1px;
+}
+
+.desc{
+    color:#BCC7DF;
+    font-size:19px;
+    line-height:1.8;
+    margin-bottom:34px;
+}
+
+/* BUTTON */
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    margin-bottom:34px;
+}
+
+.primary-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#4C6FFF;
+    border:none;
+    color:white;
+    padding:16px 30px;
+    border-radius:50px;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:0 0 20px rgba(76,111,255,0.3);
+}
+
+.secondary-btn{
+    text-decoration:none;
+    display:inline-block;
+    background:transparent;
+    border:1px solid #5C6A90;
+    color:white;
+    padding:16px 30px;
+    border-radius:50px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* FEATURES */
+
+.features{
+    display:flex;
+    gap:30px;
+    margin-bottom:36px;
+}
+
+.features span{
+    font-size:15px;
+}
+
+/* STATS */
+
+.stats{
+    background:#18233F;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    padding:26px;
+}
+
+.stat-box{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.stat-box img{
+    width:42px;
+}
+
+.stat-box h2{
+    font-size:30px;
+}
+
+.stat-box p{
+    font-size:14px;
+    color:#C4CEE5;
+}
+
+/* PARTNER */
+
+/* PARTNER */
+
+.partner{
+    margin-top:250px;
+    border:1px solid #2D3C5D;
+    padding:26px 24px;
+    border-radius:12px;
+    background:#101B35;
+}
+
+.partner p{
+    margin-bottom:18px;
+    color:#D0D7E7;
+    font-size:14px;
+}
+
+.partner-logos{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.partner-logos img{
+    height:30px;
+    opacity:0.9;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid #273657;
+    padding:60px 0;
+}
+
+.footer-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+/* LEFT */
+
+.footer-left{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-logo{
+    width:140px;
+    margin-bottom:15px;
+}
+
+.sosmed{
+    width:170px;
+}
+
+/* RIGHT */
+
+.footer-right{
+    display:flex;
+    gap:90px;
+}
+
+/* COLUMN */
+
+.footer-col h3{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.footer-col p{
+    font-size:15px;
+    color:#C1CBE0;
+    margin-bottom:14px;
+    line-height:1.7;
+}
