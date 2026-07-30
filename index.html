@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
     <title>CodeStudio</title>
-   <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLBW59CMM7"></script>
-      <script>
+
+    <!-- Google Analytics -->
+    <script async
+        src="https://www.googletagmanager.com/gtag/js?id=G-HLBW59CMM7">
+    </script>
+
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-HLBW59CMM7');
-      </script>
+        function gtag(){
+            dataLayer.push(arguments);
+        }
 
+      gtag('js', new Date());
+      gtag('config', 'G-HLBW59CMM7');
+    </script>
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-  <title>CodeStudio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 
-<nav>
+<header>
+    <nav>
+        <div class="container nav-wrapper">
 
-  <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </a>
 
-    <div class="logo">
-      <img src="images/ChatGPT_Image_May_25__2026__08_50_14_PM-removebg-preview.png">
-    </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#keunggulan">Keunggulan</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
 
-    <ul>
-      <li>Home</li>
-      <li>Service</li>
-      <li>Keunggulan</li>
-      <li>Portfolio</li>
-      <li>Testimoni</li>
-      <li>FAQ</li>
-      <li>Contact</li>
-    </ul>
+            <a href="https://wa.me/628970237347?text=Halo%20CodeStudio,%20saya%20tertarik%20dengan%20layanan%20pembuatan%20website."
+                class="nav-btn" style="text-decoration:none;display:inline-block;">
+                Contact
+            </a>
 
-    <a href="https://wa.me/628970237347?text=Halo%20CodeStudio,%20saya%20ingin%20konsultasi%20gratis." class="nav-btn">
-      Konsultasi Gratis
-    </a>
+            <button class="hamburger" aria-label="Buka menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-  </div>
-
-</nav>
+        </div>
+    </nav>
+</header>
 
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero" id="home">
 
   <div class="container hero-wrapper">
 
@@ -87,8 +102,8 @@
           Mulai Sekarang
         </a>
 
-        <a href="#portfolio" class="secondary-btn">
-           Lihat Portfolio
+        <a href="#portofolio" class="secondary-btn">
+           Lihat Portofolio
         </a>
 
       </div>
@@ -109,7 +124,7 @@
 
         <div class="stat-box">
 
-          <img src="images/1.png">
+          <img src="images/1.png" alt="Project selesai">
 
           <div>
             <h2>150+</h2>
@@ -120,7 +135,7 @@
 
         <div class="stat-box">
 
-          <img src="images/2.png">
+          <img src="images/2.png" alt="Client puas">
 
           <div>
             <h2>98%</h2>
@@ -131,7 +146,7 @@
 
         <div class="stat-box">
 
-          <img src="images/3.png">
+          <img src="images/3.png" alt="UMKM dan startup">
 
           <div>
             <h2>50+</h2>
@@ -148,44 +163,88 @@
 
     <div class="hero-right">
 
-  <!-- LAPTOP -->
+      <!-- LAPTOP -->
 
-  <img src="images/ChatGPT Image May 25, 2026, 10_14_45 PM.png" class="hero-image">
+      <img src="images/ChatGPT Image May 25, 2026, 10_14_45 PM.png" class="hero-image" alt="Tampilan website">
 
-  <!-- PARTNER -->
+      <!-- PARTNER -->
 
-  <div class="partner">
+      <div class="partner">
 
-    <p>
-      Dipercaya oleh berbagai bisnis dan startup
-    </p>
+        <p>
+          Dipercaya oleh berbagai bisnis dan startup
+        </p>
 
-    <div class="partner-logos">
+        <div class="partner-logos">
 
-      <img src="images/tokopedia.png">
-      <img src="images/bukalapak.png">
-      <img src="images/traveloka.png">
-      <img src="images/ovo.png">
+          <img src="images/tokopedia.png" alt="Tokopedia">
+          <img src="images/bukalapak.png" alt="Bukalapak">
+          <img src="images/traveloka.png" alt="Traveloka">
+          <img src="images/ovo.png" alt="OVO">
+
+        </div>
+      </div>
 
     </div>
 
   </div>
 
-</div>
-
-  </div>
-
 </section>
 
-</section>
+<!-- SERVICE -->
 
-<!-- PORTFOLIO -->
-
-<section id="portfolio">
+<section id="service">
 
     <div class="container">
 
-        <h2>Portfolio Kami</h2>
+        <h2>Layanan Kami</h2>
+
+        <p>Kami menyediakan berbagai layanan digital untuk membantu bisnis berkembang.</p>
+
+        <!-- nanti isi 4 card -->
+    </div>
+
+</section>
+
+<!-- KEUNGGULAN -->
+
+<section id="keunggulan">
+
+    <div class="container">
+
+        <h2>Mengapa Memilih CodeStudio?</h2>
+
+        <p>Kami memberikan pelayanan terbaik dengan kualitas profesional.</p>
+
+    </div>
+
+</section>
+
+<!-- TESTIMONI -->
+
+<section id="testimoni">
+
+    <div class="container">
+
+        <h2>Testimoni Client</h2>
+
+        <p>Kepuasan pelanggan adalah prioritas kami.</p>
+
+        <div class="testimonial-grid" id="testimonial-list">
+            <!-- Testimoni dari Firebase akan muncul di sini -->
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PORTOFOLIO -->
+
+<section id="portofolio">
+
+    <div class="container">
+
+        <h2>Portofolio Kami</h2>
 
         <p>Beberapa project yang telah kami kerjakan.</p>
 
@@ -193,10 +252,23 @@
 
 </section>
 
+<!-- FAQ -->
+
+<section id="faq">
+
+    <div class="container">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <p>Pertanyaan yang sering diajukan pelanggan.</p>
+
+    </div>
+
+</section>
 
 <!-- FOOTER -->
 
-<footer>
+<footer id="contact">
 
   <div class="container footer-wrapper">
 
@@ -204,9 +276,27 @@
 
     <div class="footer-left">
 
-      <img src="images/ChatGPT_Image_May_25__2026__08_50_14_PM-removebg-preview.png" class="footer-logo">
+      <img src="images/ChatGPT_Image_May_25__2026__08_50_14_PM-removebg-preview.png" class="footer-logo" alt="Logo CodeStudio">
 
-      <img src="images/sosmed.png" class="sosmed">
+      <div class="social-icons">
+
+        <a href="https://www.instagram.com/username_instagram" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/username_facebook" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://wa.me/628970237347" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/username_linkedin" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+      </div>
 
     </div>
 
@@ -218,10 +308,10 @@
 
         <h3>Layanan</h3>
 
-        <p>Web Development</p>
-        <p>UI/UX Design</p>
-        <p>Mobile App Development</p>
-        <p>SEO Optimization</p>
+        <a href="#service">Web Development</a>
+        <a href="#service">UI/UX Design</a>
+        <a href="#service">Mobile App Development</a>
+        <a href="#service">SEO Optimization</a>
 
       </div>
 
@@ -229,10 +319,10 @@
 
         <h3>Company</h3>
 
-        <p>Tentang Kami</p>
-        <p>Portfolio</p>
-        <p>Blog</p>
-        <p>Karir</p>
+        <a href="#about">Tentang Kami</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="karir.html">Karir</a>
 
       </div>
 
@@ -240,19 +330,34 @@
 
         <h3>Kontak</h3>
 
-        <p>0892-3456-7890</p>
-        <p>codestudio@gmail.com</p>
-        <p>Yogyakarta, Indonesia</p>
+        <!-- Nomor Telepon -->
+        <a href="tel:08970237347">
+          0897-0237-347
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:codestudio@gmail.com">
+          codestudio@gmail.com
+        </a>
+
+        <!-- Alamat -->
+        <a href="https://maps.google.com/?q=Yogyakarta,Indonesia" target="_blank">
+          Yogyakarta, Indonesia
+        </a>
 
       </div>
-
-        <p>Zulfa Ainun Jariyah - 23.11.5883</p>
 
     </div>
 
   </div>
 
+  <p class="copyright">
+    © 2026 CodeStudio | Zulfa Ainun Jariyah - 23.11.5883
+  </p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -5,6 +5,10 @@
     font-family:'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     background:#071126;
     color:white;
@@ -58,6 +62,24 @@ nav ul li{
     cursor:pointer;
 }
 
+/* Hamburger (dipakai di mobile, disembunyikan di desktop) */
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:8px;
+}
+
+.hamburger span{
+    width:26px;
+    height:3px;
+    background:#fff;
+    border-radius:2px;
+}
+
 /* HERO */
 
 .hero{
@@ -73,6 +95,114 @@ nav ul li{
 
 .hero-left{
     width:48%;
+}
+
+/* SECTION */
+
+section{
+    padding:80px 0;
+}
+
+section h2{
+    font-size:32px;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+section > .container > p{
+    text-align:center;
+    color:#C1CBE0;
+    margin-bottom:50px;
+    font-size:14px;
+}
+
+/* SERVICE */
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.service-card{
+    background:#18233F;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    background:#22335C;
+}
+
+.service-card h3{
+    margin:20px 0 12px;
+}
+
+.service-card p{
+    color:#C1CBE0;
+    font-size:15px;
+    line-height:1.7;
+}
+
+/* KEUNGGULAN */
+
+.advantage-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.advantage-box{
+    background:#18233F;
+    padding:30px;
+    border-radius:12px;
+}
+
+.advantage-box h3{
+    margin-bottom:15px;
+}
+
+.advantage-box p{
+    color:#C1CBE0;
+    line-height:1.7;
+}
+
+/* TESTIMONI */
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.testimonial-card{
+    background:#18233F;
+    padding:25px;
+    border-radius:12px;
+}
+
+.testimonial-card h4{
+    margin-top:20px;
+}
+
+/* FAQ */
+
+.faq-item{
+    background:#18233F;
+    margin-bottom:15px;
+    padding:20px;
+    border-radius:10px;
+}
+
+.faq-item h3{
+    margin-bottom:10px;
+}
+
+.faq-item p{
+    color:#C1CBE0;
 }
 
 /* RIGHT SIDE */
@@ -98,35 +228,6 @@ nav ul li{
 
 .hero-image:hover{
     transform:translateY(-6px);
-}
-
-/* PARTNER */
-
-.partner{
-    margin-top:22px;
-    background:#101B35;
-    border:1px solid #2D3C5D;
-    border-radius:12px;
-    padding:22px 24px;
-}
-
-.partner p{
-    margin-top: 10x;
-    margin: bottom 5px;
-    color:#D0D7E7;
-    font-size:14px;
-}
-
-.partner-logos{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:30px;
-}
-
-.partner-logos img{
-    height:120px;
-    opacity:0.9;
 }
 
 /* TEXT */
@@ -191,6 +292,7 @@ nav ul li{
     display:flex;
     gap:30px;
     margin-bottom:36px;
+    flex-wrap:wrap;
 }
 
 .features span{
@@ -205,6 +307,8 @@ nav ul li{
     display:flex;
     justify-content:space-between;
     padding:26px;
+    flex-wrap:wrap;
+    gap:20px;
 }
 
 .stat-box{
@@ -226,12 +330,10 @@ nav ul li{
     color:#C4CEE5;
 }
 
-/* PARTNER */
-
-/* PARTNER */
+/* PARTNER (versi final, duplikasi lama dihapus) */
 
 .partner{
-    margin-top:250px;
+    margin-top:60px;
     border:1px solid #2D3C5D;
     padding:26px 24px;
     border-radius:12px;
@@ -249,6 +351,7 @@ nav ul li{
     align-items:center;
     justify-content:space-between;
     gap:20px;
+    flex-wrap:wrap;
 }
 
 .partner-logos img{
@@ -267,6 +370,8 @@ footer{
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
+    flex-wrap:wrap;
+    gap:40px;
 }
 
 /* LEFT */
@@ -281,8 +386,32 @@ footer{
     margin-bottom:15px;
 }
 
-.sosmed{
-    width:170px;
+/* SOCIAL MEDIA */
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    background:#ffffff;
+    color:#071126;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:22px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    background:#4C6FFF;
+    color:#ffffff;
+    transform:translateY(-4px);
 }
 
 /* RIGHT */
@@ -290,6 +419,7 @@ footer{
 .footer-right{
     display:flex;
     gap:90px;
+    flex-wrap:wrap;
 }
 
 /* COLUMN */
@@ -299,9 +429,178 @@ footer{
     margin-bottom:20px;
 }
 
-.footer-col p{
+.footer-col a{
+    display:block;
     font-size:15px;
     color:#C1CBE0;
     margin-bottom:14px;
     line-height:1.7;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.footer-col a:hover{
+    color:#4C6FFF;
+    padding-left:6px;
+}
+
+
+/* ======================================================
+   RESPONSIVE - TABLET (max-width: 1024px)
+   ====================================================== */
+@media (max-width: 1024px){
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .advantage-grid,
+    .testimonial-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero-left h1{
+        font-size:44px;
+    }
+
+    .footer-right{
+        gap:50px;
+    }
+}
+
+/* ======================================================
+   RESPONSIVE - MOBILE (max-width: 768px)
+   ====================================================== */
+@media (max-width: 768px){
+
+    section{
+        padding:50px 0;
+    }
+
+    section h2{
+        font-size:26px;
+    }
+
+    /* NAVBAR jadi hamburger */
+    .nav-wrapper{
+        height:70px;
+    }
+
+    nav ul{
+        display:none; /* disembunyikan, munculkan lewat JS saat hamburger diklik (tambahkan class .active) */
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#23185B;
+        flex-direction:column;
+        gap:0;
+        padding:10px 0;
+        z-index:99;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
+    nav ul li{
+        padding:14px 24px;
+        border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-btn{
+        display:none;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    /* HERO jadi 1 kolom */
+    .hero{
+        padding:35px 0;
+    }
+
+    .hero-wrapper{
+        flex-direction:column;
+        gap:35px;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .hero-left h1{
+        font-size:32px;
+    }
+
+    .desc{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-wrap:wrap;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        text-align:center;
+        flex:1 1 auto;
+    }
+
+    /* STATS jadi 1 kolom */
+    .stats{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    /* GRID jadi 1 kolom */
+    .service-grid,
+    .advantage-grid,
+    .testimonial-grid{
+        grid-template-columns:1fr;
+    }
+
+    .partner{
+        margin-top:35px;
+    }
+
+    .partner-logos{
+        justify-content:center;
+    }
+
+    /* FOOTER jadi 1 kolom */
+    .footer-wrapper{
+        flex-direction:column;
+    }
+
+    .footer-right{
+        gap:35px;
+        width:100%;
+        justify-content:space-between;
+    }
+}
+
+/* ======================================================
+   RESPONSIVE - HP KECIL (max-width: 480px)
+   ====================================================== */
+@media (max-width: 480px){
+
+    .hero-left h1{
+        font-size:26px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .footer-right{
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .stat-box h2{
+        font-size:24px;
+    }
 }
